@@ -140,7 +140,7 @@ describe('Category by ID', async () => {
 
 
 
-describe('Category List', async () => {
+describe('Category Params', async () => {
   it('GET /sale/categories/{categoryId}/parameters for non existing category returns 404', async () => {
     let response = await apiRequest.get('sale/categories/0/parameters')
       .set('Authorization', authToken)
